@@ -1,0 +1,36 @@
+.prop-label {
+   font-family: "Futura Today Light", Arial,sans-serif;
+}
+
+.section-head {
+  font-family: "Futura Today Light", Arial,sans-serif;
+  font-size: 1em;
+}
+
+.data-number {
+  font-size: 1.8em;
+}
+
+.total-number {
+
+}
+
+.total-label {
+  font-size: 1.4em;
+}
+
+.info-text {
+  font-family: "Futura Today", Arial,sans-serif;
+  max-width: 30em;
+  margin: 0 auto .5em auto;
+}
+
+strong {
+  font-family: "Futura Today Bold", Arial,sans-serif;
+}
+
+.incident-label {
+  color: $blue;
+  cursor: pointer;
+  text-decoration: underline;
+}

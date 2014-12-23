@@ -1,0 +1,23 @@
+.iFrame {
+  font-size: 0.8em;
+  .mobile-footer {
+    bottom: 0;
+    position: absolute;
+    z-index: 200;
+  }
+
+  #search_results {
+    max-height: 490px;
+    overflow-y: scroll;
+  }
+
+  .data-section {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .article-button {
+    display: none;
+  }
+}

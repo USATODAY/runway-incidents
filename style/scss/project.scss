@@ -1,0 +1,81 @@
+@import "bits";
+@import "base";
+
+* {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+
+
+body, div, html, {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  // height: 100%;
+  @media (min-width: 800px) {
+    background:url(../img/airport.jpg) no-repeat center center fixed;;
+    background-size: cover;
+
+  }
+}
+
+.group{
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+.data-charts {
+  @extend .group;
+  margin-top: 1em;
+  opacity: 0;
+  position: relative;
+  top: 0px;
+  transition: opacity 500ms ease;
+  &.show {
+    opacity: 1;
+    top: 0;
+  }
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.panel-data {
+  display: block;
+  height: auto;
+  padding: 1em 0;
+  position: relative;
+  &.hidden {
+    display: none;
+  }
+}
+
+.blur {
+  filter: blur(5px);
+  transition: filter 300ms ease;
+}
+
+@import "typography";
+@import "preloader";
+@import "mobile";
+@import "search";
+@import "buttons";
+@import "panel";
+@import "chart";
+@import "iframe";
+@import "share";
+
